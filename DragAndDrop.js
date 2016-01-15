@@ -4,22 +4,22 @@ Galy4a, 2016
 
 An example of a function call:
     DragAndDrop({
-        class: 'block', //class of Drag&Drop elements
+        className: 'block', //class of Drag&Drop elements
         zIndex: 1000    //minimal Z-index of Drag&Drop elements(default value: 1000)
     });
 */
 
 function DragAndDrop(opt){
 
-		if(opt.class == undefined){
-    		console.log('Class for Dran&Drop elements is not defined!\nSet the class in the function call.');
+    if(opt.className == undefined){
+        console.log('Class for Dran&Drop elements is not defined!\nSet the class in the function call.');
         return false;
     }    	
 	
   	if(opt.zIndex == undefined)
     		opt.zIndex == 1000;
         
-    var block = document.getElementsByClassName(opt.class);    
+    var block = document.getElementsByClassName(opt.className);    
 
     for(var i = 0; i < block.length; i++){
         block[i].addEventListener('mousedown', drag);
