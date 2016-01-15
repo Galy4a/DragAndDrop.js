@@ -17,7 +17,7 @@ function DragAndDrop(opt){
     }    	
 	
     if(opt.zIndex == undefined)
-        opt.zIndex == 1000;
+        opt.zIndex = 1000;
         
     var block = document.getElementsByClassName(opt.className);    
 
