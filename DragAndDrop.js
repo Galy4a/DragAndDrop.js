@@ -33,7 +33,7 @@ function DragAndDrop(opt){
                       Y: event.clientY - this.getBoundingClientRect().top};    
         for(var i = 0; i < block.length; i++)
             if(block[i] != this && block[i].style.zIndex > this.style.zIndex)
-              block[i].style.zIndex = block[i].style.zIndex - 1;
+                block[i].style.zIndex = block[i].style.zIndex - 1;
         this.style.zIndex = opt.zIndex;
         this.addEventListener('mousemove', move);
     };
